@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_06_012307) do
+ActiveRecord::Schema.define(version: 2021_01_06_013828) do
+
+  create_table "artists", force: :cascade do |t|
+    t.string "name"
+    t.string "style"
+    t.string "location"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "songs", force: :cascade do |t|
     t.string "title"
@@ -24,4 +32,15 @@ ActiveRecord::Schema.define(version: 2021_01_06_012307) do
     t.string "artist"
   end
 
+  create_table "tracks", force: :cascade do |t|
+    t.integer "artist_id", null: false
+    t.integer "song_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["artist_id"], name: "index_tracks_on_artist_id"
+    t.index ["song_id"], name: "index_tracks_on_song_id"
+  end
+
+  add_foreign_key "tracks", "artists"
+  add_foreign_key "tracks", "songs"
 end
