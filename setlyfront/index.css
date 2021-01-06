@@ -129,6 +129,7 @@ table {
 }
 
 /* END MEYERS RESET */
+
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 h1 {
   font-family: "Poiret One", cursive;
@@ -155,8 +156,4 @@ h1 {
 
 .bodytop {
   height: 10px;
-}
-
-.mysongs {
-  margin-top: 30px;
 }
