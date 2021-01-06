@@ -15,4 +15,8 @@ artist1 = Artist.create(name: "Pandasaywhat?!", style: "Funky Electronic", locat
 
 track1 = Track.create(artist: artist1, song: song1)
 
+setlist1 = Setlist.create(date: "May 8, 2020", venue: "Rocky Mountain Virtual", location: "Online stream", price: 0, tixsold: 0)
+
+songset1 = Songset.create(song: song1, setlist: setlist1), Songset.create(song: song2, setlist: setlist1)
+
 binding.pry
