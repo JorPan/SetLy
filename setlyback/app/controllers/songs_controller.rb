@@ -7,7 +7,7 @@ class SongsController < ApplicationController
             released: params[:released],
             album: params[:album],
             year: params[:year],
-            artist: params[:artist]
+            # artist: params[:artist]
         )
         render json: @song
     end
