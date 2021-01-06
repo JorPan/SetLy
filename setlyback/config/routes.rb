@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :songsets
   resources :setlists
   resources :tracks
   resources :artists
