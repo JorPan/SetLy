@@ -9,6 +9,7 @@ require "pry"
 
 
 song1 = Song.create(title: "Swagger Wagon", key: "D minor", tempo: 85, released: true, album: "Swagger Wagon", year: 2018)
+song2 = Song.create(title: "Tequila Flip", key: "F minor", tempo: 85, released: false, album: "N/A", year: 2019)
 
 artist1 = Artist.create(name: "Pandasaywhat?!", style: "Funky Electronic", location:"Denver, CO")
 
