@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "pry"
+
+
+song1 = Song.create(title: "Swagger Wagon", key: "D minor", tempo: 85, released: true, album: "Swagger Wagon", year: 2018, artist: "Pandasaywhat?!")
+
+
+binding.pry
